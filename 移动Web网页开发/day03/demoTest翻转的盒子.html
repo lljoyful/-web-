@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>翻转的盒子</title>
+    <style>
+        body {
+            perspective: 400px;
+        }
+        
+        .box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            /* background-color: #ccc; */
+            margin: 100px auto;
+            transition: all 1s;
+            /* 让背面的粉色盒子保留立体空间，给父级田间保留立体空间 */
+            transform-style: preserve-3d;
+        }
+        
+        .back,
+        .front {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            font-size: 40px;
+            text-align: center;
+            line-height: 200px;
+        }
+        
+        .front {
+            background-color: turquoise;
+            z-index: 1;
+        }
+        
+        .back {
+            background-color: pink;
+            /* 背靠背旋转 */
+            transform: rotateY(180deg);
+        }
+        
+        .box:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 翻转的是父亲的盒子，让父亲作为整体翻转，不要单独翻转两个盒子 -->
+    <div class="box">
+        <div class="front">哈哈哈</div>
+        <div class="back">呀呀呀</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>绝对定位的盒子不占有位置</title>
+	<style>
+		.father {
+			width: 400px;
+			height: 400px;
+			background-color: turquoise;
+			position: relative;
+		}
+		.damao {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 200px;
+			height: 200px;
+			background-color: #00a4ff;
+
+		}
+		.ermao {
+			width: 250px;
+			height: 250px;
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="damao"></div>
+		<div class="ermao"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>链接伪类选择器</title>
+	<style>
+
+		/*未访问过*/
+		a:link{
+			color: #333;
+			text-decoration: none;			
+		}
+		/*已经访问过*/
+		a:visited{
+			color: grey;
+		}
+		/*鼠标放上的状态*/
+		a:hover{
+			color: red;
+		}
+		a{
+			text-decoration: none;
+		}
+	</style>
+	<base target="_blank" />
+</head>
+<body>
+	<a href="http://xiaomi.com">小米手机</a>
+</body>
+</html>

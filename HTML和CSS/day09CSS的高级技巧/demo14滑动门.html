@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>滑动门</title>
+	<style>
+		/*1.a是设置左侧背景的（左门）
+		2.span是设置右侧背景（右门）
+		3.因为整个导航栏都是连接，所以a包span
+		4.滑动门，跟文字内容有关系所以要用文字撑开盒子，所以用行内块*/
+		a {
+			display: inline-block;
+			height: 33px;
+			background: url(images/to.png) no-repeat;
+			margin: 100px;
+			color: #fff;
+			padding-left: 15px;
+		}
+		a span {
+			display: inline-block;
+			height: 33px;
+			/*一定注意span右对齐*/
+			background: url(images/to.png) no-repeat  right top;
+			padding-right: 15px;
+
+		}
+	</style>
+</head>
+<body>
+	<a href="#">
+		<span>首页</span>
+	</a>
+	<a href="#">
+		<span>公司新闻</span>
+	</a>
+</body>
+</html>

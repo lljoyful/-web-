@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 变成css3盒子模型 */
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            padding: 20px;
+            border: 5px solid red;
+        }
+        
+        a {
+            /*点击高亮我们需要清除清除 设置为transparent 完成透明*/
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        input {
+            /*在移动端浏览器默认的外观在iOS上加上这个属性才能给按钮和输入框自定义样式*/
+            -webkit-appearance: none;
+        }
+        
+        img,
+        a {
+            /*禁用长按页面时的弹出菜单*/
+            -webkit-touch-callout: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <a href="#">haha</a>
+    <input type="button" value="按钮">
+</body>
+
+</html>

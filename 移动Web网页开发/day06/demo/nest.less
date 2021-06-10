@@ -1,0 +1,20 @@
+.header {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    a{
+        color: aqua;
+        &:hover{
+            color: black;
+        }
+    }
+}
+.nav {
+    // b. 如果遇见 （交集|伪类|伪元素选择器） ，利用&进行连接
+    &::before {
+        content: "";
+    }
+    .logo {
+        color: green;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: turquoise;
+            /* 前边是x轴，后边是y轴 */
+            /* transform: translate(100px, 100px); */
+            /* 只移动x轴 */
+            /* transform: translate(100px, 0); */
+            /* transform: translateX(100px); */
+        }
+        
+        div:first-child {
+            transform: translate(30px, 30px);
+        }
+        
+        div:last-child {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

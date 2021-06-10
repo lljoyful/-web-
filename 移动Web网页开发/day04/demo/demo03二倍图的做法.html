@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 我们需要一个50*50的（css）像素图片，
+        直接放到iphon8里边就会被放大两倍
+        100*100，会模糊 */
+        /* 我门采取的是100*100的图片 
+        然后手动把台语片缩小为50*50（css像素）
+        我们准备的图片比实际需要的大两倍，这就是2倍图 */
+        
+        img:nth-child(2) {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 模糊的 -->
+    <img src="images/apple50(1).jpg" alt="">
+    <!-- 采取两倍图 -->
+    <img src="images/apple100.jpg" alt="">
+</body>
+
+</html>
