@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>小说排行榜</title>
+	<base target="_blank">
+	<style>
+		table,
+		td,
+		th{
+			border:1px solid turquoise;
+			/*然后我们的单元格合并相邻的边框*/
+			border-collapse: collapse;
+		}
+		.one{
+			background-color:orange; 
+		}
+		.two{
+			background-color: turquoise;
+		}
+		a{
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<!-- height="500" width="700" -->
+	<table  align="center" cellspacing="0" >
+		<caption><h3>小说排行榜</h3></caption>
+		<tr class="one">
+			<th>排名</th>
+			<th>关键词</th>
+			<th>趋势</th>
+			<th>今日搜索</th>
+			<th>最近七日</th>
+			<th>相关链接</th>
+		</tr>
+		<tr class="two">
+			<td colspan="2">1</td>			
+			<td>上升</td>
+			<td >345</td>
+			<td>123</td>
+			<td rowspan="2">
+				<a href="https://www.baidu.com/">贴吧</a>
+				&nbsp;
+				<a href="https://www.baidu.com/">图片</a>
+				&nbsp;百科
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>鬼吹灯</td>
+			<td>上升</td>
+			<td>345</td>
+			<td>123</td>
+		</tr>
+		<tr class="two">
+			<td>3</td>
+			<td>鬼吹灯</td>
+			<td>上升</td>
+			<td>345</td>
+			<td>123</td>
+			<td>
+				<a href="https://www.baidu.com/">贴吧</a>
+				&nbsp;
+				<a href="https://www.baidu.com/">图片</a>
+				&nbsp;百科
+			</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>鬼吹灯</td>
+			<td>上升</td>
+			<td>345</td>
+			<td>123</td>
+			<td>
+				<a href="https://www.baidu.com/">贴吧</a>
+				&nbsp;
+				<a href="https://www.baidu.com/">图片</a>
+				&nbsp;百科
+			</td>
+		</tr>
+
+	</table>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>淘宝轮播图</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+		ul {
+			list-style: none;
+		}
+		.taobao {
+			position: relative;
+			width: 520px;
+			height: 280px;
+			margin: 100px auto;
+			/*background-color: pink;*/
+		}
+		.arrow-l,
+		.arrow-r {
+			position: absolute;
+			top: 50%;
+			/*绝对定位的盒子，无需给大小，直接转换*/
+			width: 20px;
+			height: 30px;
+			margin-top: -15px;
+			background: rgba(0, 0, 0, .2);
+			color: #fff;
+			/*text-align: center;*/
+			line-height: 30px;
+		}
+		.arrow-l {
+			left: 0;
+			/*圆角矩形*/
+			/*右上角*/
+			border-top-right-radius: 15px;
+			/*右下角*/
+			border-bottom-right-radius: 15px;
+		}
+		.arrow-r {
+			right: 0;
+			/*绝对定位的盒子，无需给大小，直接转换*/
+			text-align: right;
+			/*圆角矩形*/
+			border-radius: 15px 0 0 15px;
+		}
+		.arrow-l:hover,
+		.arrow-r:hover {
+			background: rgba(0, 0, 0, .4);
+		}
+		.circle {
+			position: absolute;
+			left: 50%;
+			bottom: 15px;
+			margin-left: -35px;
+			width: 70px;
+			height: 13px;
+			background: rgba(255, 255, 255, 0.3);
+			border-radius: 7px;
+		}
+		.circle li {
+			float: left;
+			width: 8px;
+			height: 8px;
+			background: #fff;
+			border-radius: 50%;
+			margin: 3px;
+		}
+		.circle .current {
+			background-color: #ff5000;
+		}
+	</style>
+</head>
+<body>
+	<div class="taobao">
+		<!-- 左按钮 -->
+		<a href="#" class="arrow-l"> &lt; </a>
+		<!-- 右按钮 -->
+		<a href="#" class="arrow-r"> &gt; </a>
+		<!-- 图片 -->
+		<img src="../image/taobao.jpg" alt="">
+		<!-- 小圆点 -->
+		<ul class="circle">
+			<li></li>
+			<li class="current"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>

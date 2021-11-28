@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>表单</title>
+</head>
+<body>
+	<!-- type=text是文本框 -->
+	<label>
+		用户名：<input type="text" value="请输入用户名" name="username"/>
+	</label>
+	
+	<br/>
+	昵称：<input type="text" value="请输入用户名" name="nicheng"/>
+	<!-- type="password"密码框 -->
+	<br/>
+	密码：<input type="password" name="password"/>
+	<br/>
+	性别：
+		男<input type="radio" checked="checked" name="sex"/>
+		女<input type="radio" name="sex"/>
+		未知<input type="radio" name="sex"/>
+	<br/>
+	爱好：
+		睡觉<input type="checkbox" name="hobby" checked="checked"/>
+		篮球<input type="checkbox" name="hobby"/>
+		足球<input type="checkbox" name="hobby"/>
+		乒乓球<input type="checkbox" name="hobby"/>
+	<br/>
+	<!-- 普通按钮 -->
+	<input type="button" name="button" value="获取短信验证码" />
+	<!-- 提交按钮 -->
+	<input type="submit" name="submit">
+	<!-- 重置按钮 -->
+	<input type="reset" name="reset">
+	<br/>
+	<input type="image" src="btn.png" name="image">
+	<br/>
+	<!-- 文件域,上传文件用的 -->
+	上传文件：<input type="file" name="file">
+</body>
+</html>

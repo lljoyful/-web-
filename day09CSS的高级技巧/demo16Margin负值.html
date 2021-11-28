@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Margin负值</title>
+	<style>
+		div {
+			position: relative;
+			float: left;
+			width: 200px;
+			height: 300px;
+			border: 1px solid #ccc;
+			/*因为加了浮动，浮动是紧贴边框的，所以是左负，上负 */
+			margin-left: -1px;
+			margin-top: -1px;
+		}
+		/*鼠标经过div的意思 p也可以:hover*/
+		div:hover {
+			/*让当前鼠标经过的这个div升到最高*/
+			/*position: relative;*/
+			/*只能用相对定位，用来占位置*/
+			/*都是定位的盒子通过z-index*/
+			z-index: 1;			
+			border: 1px solid #f40;
+		}
+/*		div:hover .one {
+			position: absolute;
+			width: 200px;
+			height: 270px;
+		}
+		div:hover .two {
+			position: absolute;
+			height: 30px;
+			background-color: turquoise; 
+		}*/
+	</style>
+</head>
+<body>
+	<div>
+		<div class="one"></div>
+		<div class="two"></div>
+	</div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.box {
+			width: 1002px;
+			margin: 44px auto 0 auto;
+		}
+		.ad-l {
+			position: fixed;
+			left: 0;
+			top: 50%;
+			margin-top: -144px; 
+		}
+		.ad-r {
+			position: fixed;
+			right: 0;
+			top: 50%;
+			margin-top: -144px;
+		}
+		.top {
+			/*因为没有写宽度，默认宽度就是内容的宽度*/
+			/*所以以后定位的盒子，需要写宽度*/
+			position: fixed;
+			top: 0;
+			height: 44px;
+			width: 100%;
+			/*background-color: turquoise;*/
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="top">
+		<img src="../image/top.png" alt="">
+	</div>
+	<!-- 左右的固定定位 -->
+	<img src="../image/ad-l.png" class="ad-l">
+	<img src="../image/ad-r.png" class="ad-r">
+	<div class="box">
+		<img src="../image/box.png" alt="">
+	</div>
+</body>
+</html>
